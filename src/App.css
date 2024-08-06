@@ -1,0 +1,1043 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+  --navlink_color:rgb(255, 254, 254);
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width:1440px) {
+
+
+    .background-img{
+      position: relative;
+      width:100%;
+      min-width:1440px;
+      height: 700px;
+      object-fit: fill;
+      margin: none;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+
+    .nav{
+      position: absolute;
+      top:7%;
+      left:3%;
+      display: flex;
+      flex-direction: row;
+      width:100%;
+      min-width: 1440px;
+    }
+
+    .my-portifolio{
+      flex:50%;
+      display: inline;
+      align-items: center;
+      color: var(--navlink_color);
+      text-transform: uppercase;
+      font-family: "PT Serif", serif;
+      font-weight: 700;
+      font-size: 45px;
+    }
+
+    .links{
+      flex: 50%;
+    }
+
+    .nav-links{
+      display: flex;
+      margin-right: 2%;
+      align-items: center;
+    }
+
+
+
+    .nav-link-1,.nav-link-2,.nav-link-3,.nav-link-4,.nav-link-5{
+      margin-right: 10%;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--navlink_color);
+      background-color: black;
+      margin-top: 5%;
+    }
+
+    .nav-link-1::after,.nav-link-2::after,.nav-link-3::after,.nav-link-4::after,.nav-link-5::after{
+      content:"";
+      width:70px;
+      height:2px;
+      top:-10%;
+      position: absolute;
+      background-color:var(--navlink_color);
+      transition: 0.2s ease-in;
+      visibility: hidden;
+    }
+
+    .nav-link-1::before,.nav-link-2::before,.nav-link-4::before,.nav-link-5::before{
+      content:"";
+      width:70px;
+      height:2px;
+      position: absolute;
+      background-color:var(--navlink_color);
+      top:60%;
+      visibility: hidden;
+      transition: 0.2s ease-in;
+    }
+
+    .nav-link-1::before{
+      transform: translateX(-35px) translateY(30px);
+      left:51.5%;
+    }
+
+    .nav-link-1::after{
+      transform:translateX(-35px) translateY(10px);
+      left:51.5%;
+    }
+
+    .nav-link-2::before{
+      transform: translateX(-30px) translateY(30px);
+      left:60%;
+    }
+    .nav-link-2::after{
+      transform: translateX(-30px) translateY(10px);
+      left:60%;
+    }
+
+    .nav-link-3::after{
+      transform: translateX(-50px) translateY(10px);
+      left:69.5%;
+      width:103px;
+    }
+
+    .nav-link-3::before{
+      transform: translateX(-50px) translateY(30px);
+      left:69.5%;
+      width:103px;
+      content:"";
+      height:2px;
+      position: absolute;
+      background-color:var(--navlink_color);
+      top:60%;
+      transition: 0.2s ease-in;
+      visibility: hidden;
+    }
+
+    .nav-link-4::after{
+      transform: translateX(-45px) translateY(10px);
+      left:79.92%;
+      width: 105px;
+    }
+
+    .nav-link-4::before{
+      transform: translateX(-45px) translateY(30px);
+      left:79.92%;
+      width: 105px;
+    }
+
+    .nav-link-5::after{
+      transform: translateX(-45px) translateY(10px);
+      left:90.5%;
+      width:95px;
+    }
+
+    .nav-link-5::before{
+      transform: translateX(-45px) translateY(30px);
+      left:90.5%;
+      width:95px;
+    }
+
+    .nav-link-5:hover::before{
+      visibility: visible;
+      transform: translateX(-45px) translateY(10px);
+    }
+
+    .nav-link-5:hover::after{
+      visibility: visible;
+      transform: translateX(-45px) translateY(30px);
+    }
+
+    .nav-link-4:hover::after{
+      visibility: visible;
+      transform: translateX(-45px) translateY(30px);
+    }
+
+    .nav-link-4:hover::before{
+      visibility: visible;
+      transform: translateX(-45px) translateY(10px);
+    }
+
+    .nav-link-2:hover::before{
+      visibility: visible;
+      transform: translateX(-30px) translateY(10px);
+    }
+
+    .nav-link-2:hover::after{
+      visibility: visible;
+      transform: translateX(-30px) translateY(30px);
+    }
+
+    .nav-link-3:hover::before{
+      visibility: visible;
+      transform: translateX(-50px) translateY(10px);
+    }
+
+    .nav-link-3:hover::after{
+      visibility: visible;
+      transform: translateX(-50px) translateY(30px);
+    }
+
+
+    .nav-link-1:hover::after{
+      visibility: visible;
+      transform: translateX(-35px) translateY(30px);
+    }
+
+    .nav-link-1:hover::before{
+      visibility: visible;
+      transform: translateX(-35px) translateY(10px);
+    }
+
+    
+    .intro,.about,.projects,.portifolio,.contact{
+      visibility: hidden;
+    }
+
+    #intro{
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      top:30%;
+      width: 100%;
+      font-family: "Barlow", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    .my_profile{
+      flex: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 350px;
+      height:350px;
+      border-radius: 50%;
+      margin-left:10% ;
+    }
+
+    .my_intro{
+      flex:40%;
+      color: var(--navlink_color);
+      margin-left: 20%;
+      top:10%;
+    }
+
+    .my_intro h1{
+      
+      font-size: 35px;
+      margin-top: 10%;
+    }
+
+    .my_intro h3{
+    
+      font-size: 60px;
+      color: rgb(139, 254, 242);
+    }
+
+    .my_intro p{
+      font-size: 35px;
+    }
+
+    .my_intro p h2{
+      position: absolute;
+      display: inline-block;
+    }
+
+    .about_me_title{
+      font-size: 70px;
+      font-family: "Barlow", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      display: flex;
+      justify-content: center;
+      margin-top: 5%;
+      visibility: hidden;
+    }
+
+    .container_about_me{
+      position: relative;
+      width:100%;
+      height:450px;
+      margin-top: 4%;
+      gap: 20px;
+      perspective: 1000px;
+      visibility: hidden;
+    }
+
+    .about_me{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      background-color: aqua;
+      transform-style: preserve-3d;
+    }
+
+    .about_me:hover{
+      transform:rotateY(180deg);
+      transition: all 0.3s ease;
+    }
+
+    .front_card-1,.front_card-2,.front_card-3,.front_card-4{
+      flex:25%;
+      margin-left: 10%;
+      width:100%;
+      height:90%;
+      backface-visibility: hidden;
+      position: absolute;
+      background-color: aliceblue;
+    }
+
+    .back_card-1,.back_card-2,.back_card-3,.back_card-4{
+      backface-visibility: hidden;
+      transform:rotateY(180deg);
+      position: absolute;
+      background-color: aquamarine;
+      width:100%;
+    }
+
+    .button{
+      border-radius: 5px;
+      margin-top: 3%;
+      font-size: 20px;
+      text-transform: uppercase;
+      padding: 5px 5px 5px 5px;
+      color: black;
+      background-color: white;
+      border: none;
+      transition: 0.3s ease;
+    }
+
+    .button:hover{
+      color: white;
+      background-color: black;
+      border: 1px solid black;
+      cursor: pointer;
+    }
+
+   .button.active{
+      transform: scale(0.6);
+    }
+
+    #projects h1{
+      display: flex;
+      justify-content: center;
+      font-size: 50px;
+      text-transform: uppercase;
+      margin-top: 3%;
+    }
+
+    .recent{
+      font-size: 35px;
+      margin-top: 30%;
+      margin-left:3%;
+      text-transform: uppercase;
+      font-family: "Edu AU VIC WA NT Hand", cursive;
+      font-optical-sizing: auto;
+      font-weight: 400px;
+      font-style: normal;
+      display: inline;
+
+    }
+
+    .github{
+      color: white;
+      background-color: rgb(35, 218, 251);
+      padding: 10px 10px 10px 10px;
+      text-decoration: none;
+      border: none;
+      border-radius: 10px;
+      transition: 0.3s ease-in;
+    }
+
+    .github:hover{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      color: rgb(35, 218, 251);
+      background-color:white;
+    }
+
+    .github_link{
+      text-transform: uppercase;
+      font-size: 30px;
+      text-decoration: none;
+      border: none;
+      color: white;
+      background-color: rgb(0, 0, 0);
+      margin-left: 5%;
+    }
+}
+
+@media(max-width:1396px){
+  .nav-links{
+    visibility: hidden;
+  }
+
+  .hamburger-menu{
+    width: 75px;
+    height:75px;
+    position: relative;
+    top:-35%;
+    left:40%;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  span{
+    width:100%;
+    display: inline-block;
+    height: 5px;
+    background-color: var(--navlink_color);
+    border-radius: 10px;
+    transition: 0.2 ease-in;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  span:nth-child(1){
+    top:25%
+  }
+
+  span:nth-child(3){
+    top:75%;
+  }
+
+  .hamburger-menu.active span:nth-child(1){
+    transform: rotate(-45deg) ;
+    top:50%;
+  }
+
+  .hamburger-menu.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger-menu.active span:nth-child(3){
+    transform: rotate(45deg) ;
+    top: 50%;
+  }
+
+  .off-screen-menu{
+    background-color: black;
+    height:100vh;
+    width: 100%;
+    max-width: 600px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    right:-600px;
+    transition: 0.3s ease;
+    z-index: 1;
+  }
+
+  .off-screen-menu.active{
+    right: 0px;
+
+  }
+
+  .intro{
+    margin-top: 30%;
+
+  }
+
+  .intro,.about,.projects,.portifolio,.contact{
+    display: block;
+    margin-left: 5%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    flex:10%;
+    opacity: 0.6;
+    visibility:visible;
+  }
+
+  .intro:hover,.about:hover,.projects:hover,.portifolio:hover,.contact:hover,.intro.active,.about.active,.projects.active,.portifolio.active,.contact.active{
+    opacity: 1;
+    color: aqua;
+    visibility: visible;
+  }
+
+  #intro{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top:30%;
+    width: 100%;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .my_profile{
+    flex: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 330px;
+    height:330px;
+    border-radius: 50%;
+    margin-left:10% ;
+  }
+
+  .my_intro{
+    flex:40%;
+    color: var(--navlink_color);
+    margin-left: 20%;
+    top:10%;
+  }
+
+  .my_intro h1{
+    font-size: 35px;
+    margin-top: 10%;
+  }
+
+  .my_intro h3{
+    font-size: 60px;
+    color: rgb(139, 254, 242);
+  }
+
+  .my_intro p{
+    font-size: 35px;
+  }
+
+  .my_intro p h2{
+    position: absolute;
+    display: inline-block;
+  }
+}
+
+
+@media(max-width:1160px){
+  .nav-links{
+    visibility: hidden;
+  }
+
+  .hamburger-menu{
+    width: 75px;
+    height:75px;
+    position: relative;
+    top:-35%;
+    left:10%;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  span{
+    width:100%;
+    display: inline-block;
+    height: 5px;
+    background-color: var(--navlink_color);
+    border-radius: 10px;
+    transition: 0.2 ease-in;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  span:nth-child(1){
+    top:25%
+  }
+
+  span:nth-child(3){
+    top:75%;
+  }
+
+  .hamburger-menu.active span:nth-child(1){
+    transform: rotate(-45deg) ;
+    top:50%;
+  }
+
+  .hamburger-menu.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger-menu.active span:nth-child(3){
+    transform: rotate(45deg) ;
+    top: 50%;
+  }
+
+  .off-screen-menu{
+    background-color: black;
+    height:100vh;
+    width: 100%;
+    max-width: 900px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    right:-900px;
+    transition: 0.3s ease;
+  }
+
+  .off-screen-menu.active{
+    right: 0px;
+  }
+
+  .intro{
+    margin-top: 30%;
+
+  }
+
+  .intro,.about,.projects,.portifolio,.contact{
+    display: block;
+    margin-left: 5%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    flex:10%;
+    opacity: 0.6;
+    visibility:visible;
+  }
+
+  .intro:hover,.about:hover,.projects:hover,.portifolio:hover,.contact:hover,.intro.active,.about.active,.projects.active,.portifolio.active,.contact.active{
+    opacity: 1;
+    color: aqua;
+    visibility: visible;
+  }
+}
+
+@media(max-width:938px){
+  .nav-links{
+    visibility: hidden;
+  }
+
+  .hamburger-menu{
+    width: 75px;
+    height:75px;
+    position: relative;
+    top:-35%;
+    left:-15%;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  span{
+    width:100%;
+    display: inline-block;
+    height: 5px;
+    background-color: var(--navlink_color);
+    border-radius: 10px;
+    transition: 0.2 ease-in;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  span:nth-child(1){
+    top:25%
+  }
+
+  span:nth-child(3){
+    top:75%;
+  }
+
+  .hamburger-menu.active span:nth-child(1){
+    transform: rotate(-45deg) ;
+    top:50%;
+  }
+
+  .hamburger-menu.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger-menu.active span:nth-child(3){
+    transform: rotate(45deg) ;
+    top: 50%;
+  }
+
+  .off-screen-menu{
+    background-color: black;
+    height:100vh;
+    width: 100%;
+    max-width: 900px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    right:-900px;
+    transition: 0.3s ease;
+  }
+
+  .off-screen-menu.active{
+    right: 0px;
+  }
+
+  .intro{
+    margin-top: 30%;
+
+  }
+
+  .intro,.about,.projects,.portifolio,.contact{
+    display: block;
+    margin-left: 5%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    flex:10%;
+    opacity: 0.6;
+    visibility:visible;
+  }
+
+  .intro:hover,.about:hover,.projects:hover,.portifolio:hover,.contact:hover,.intro.active,.about.active,.projects.active,.portifolio.active,.contact.active{
+    opacity: 1;
+    color: aqua;
+    visibility: visible;
+  }
+}
+
+@media(max-width:800px){
+  #intro{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top:30%;
+    width: 100%;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .my_profile{
+    flex: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    height:250px;
+    border-radius: 50%;
+    margin-left:10% ;
+  }
+
+  .my_intro{
+    flex:40%;
+    color: var(--navlink_color);
+    margin-left: 20%;
+    top:10%;
+  }
+
+  .my_intro h1{
+    
+    font-size: 30px;
+    margin-top: 0%;
+  }
+
+  .my_intro h3{
+  
+    font-size: 40px;
+    color: rgb(139, 254, 242);
+  }
+
+  .my_intro p{
+    font-size: 30px;
+  }
+
+  .my_intro p h2{
+    position: absolute;
+    display: inline-block;
+  }
+
+}
+
+@media(max-width:736px){
+  .nav-links{
+    visibility: hidden;
+  }
+
+  .hamburger-menu{
+    width: 75px;
+    height:75px;
+    position: relative;
+    top:-35%;
+    left:-25%;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  span{
+    width:100%;
+    display: inline-block;
+    height: 5px;
+    background-color: var(--navlink_color);
+    border-radius: 10px;
+    transition: 0.2 ease-in;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  span:nth-child(1){
+    top:25%
+  }
+
+  span:nth-child(3){
+    top:75%;
+  }
+
+  .hamburger-menu.active span:nth-child(1){
+    transform: rotate(-45deg) ;
+    top:50%;
+  }
+
+  .hamburger-menu.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger-menu.active span:nth-child(3){
+    transform: rotate(45deg) ;
+    top: 50%;
+  }
+
+  .off-screen-menu{
+    background-color: black;
+    height:100vh;
+    width: 100%;
+    max-width: 1000px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    right:-1000px;
+    transition: 0.3s ease;
+  }
+
+  .off-screen-menu.active{
+    right: 0px;
+  }
+
+  .intro{
+    margin-top: 30%;
+
+  }
+
+  .intro,.about,.projects,.portifolio,.contact{
+    display: block;
+    margin-left: 5%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    flex:10%;
+    opacity: 0.6;
+    visibility:visible;
+  }
+
+  .intro:hover,.about:hover,.projects:hover,.portifolio:hover,.contact:hover,.intro.active,.about.active,.projects.active,.portifolio.active,.contact.active{
+    opacity: 1;
+    color: aqua;
+    visibility: visible;
+  }
+}
+
+@media(max-width:640px){
+
+  .nav-links{
+    visibility: hidden;
+  }
+
+  .my-portifolio{
+    font-size: 30px;
+  }
+
+  .hamburger-menu{
+    width: 60px;
+    height:60px;
+    position: relative;
+    top:-45%;
+    left:-45%;
+    cursor: pointer;
+    z-index: 2;
+
+  }
+
+  span{
+    width:100%;
+    display: inline-block;
+    height: 5px;
+    background-color: var(--navlink_color);
+    border-radius: 10px;
+    transition: 0.2 ease-in;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  span:nth-child(1){
+    top:25%
+  }
+
+  span:nth-child(3){
+    top:75%;
+  }
+
+  .hamburger-menu.active span:nth-child(1){
+    transform: rotate(-45deg) ;
+    top:50%;
+  }
+
+  .hamburger-menu.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger-menu.active span:nth-child(3){
+    transform: rotate(45deg) ;
+    top: 50%;
+  }
+
+  .off-screen-menu{
+    background-color: black;
+    height:100vh;
+    width: 100%;
+    max-width: 1200px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    right:-1200px;
+    transition: 0.3s ease;
+  }
+
+  .off-screen-menu.active{
+    right: 0px;
+  }
+
+  .intro{
+    margin-top: 30%;
+
+  }
+
+  .intro,.about,.projects,.portifolio,.contact{
+    display: block;
+    margin-left: 5%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    flex:10%;
+    opacity: 0.6;
+    visibility:visible;
+  }
+
+  .intro:hover,.about:hover,.projects:hover,.portifolio:hover,.contact:hover,.intro.active,.about.active,.projects.active,.portifolio.active,.contact.active{
+    opacity: 1;
+    color: aqua;
+    visibility: visible;
+  }
+}
+
+@media(max-width:568px){
+  .nav-links{
+    visibility: hidden;
+  }
+
+  .nav{
+    top:7%;
+  }
+
+  .my-portifolio{
+    font-size: 30px;
+  }
+
+  .hamburger-menu{
+    width: 65px;
+    height:65px;
+    position: relative;
+    top:-50%;
+    left:-50%;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  span{
+    width:100%;
+    display: inline-block;
+    height: 5px;
+    background-color: var(--navlink_color);
+    border-radius: 10px;
+    transition: 0.2 ease-in;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  span:nth-child(1){
+    top:25%
+  }
+
+  span:nth-child(3){
+    top:75%;
+  }
+
+  .hamburger-menu.active span:nth-child(1){
+    transform: rotate(-45deg) ;
+    top:50%;
+  }
+
+  .hamburger-menu.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger-menu.active span:nth-child(3){
+    transform: rotate(45deg) ;
+    top: 50%;
+  }
+
+  .off-screen-menu{
+    background-color: black;
+    height:100vh;
+    width: 100%;
+    max-width: 1200px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    right:-1200px;
+    transition: 0.3s ease;
+  }
+
+  .off-screen-menu.active{
+    right: 0px;
+  }
+
+  .intro{
+    margin-top: 10%;
+
+  }
+
+  .intro,.about,.projects,.portifolio,.contact{
+    display: block;
+    margin-left: 5%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    flex:10%;
+    opacity: 0.6;
+    visibility:visible;
+  }
+
+  .intro:hover,.about:hover,.projects:hover,.portifolio:hover,.contact:hover,.intro.active,.about.active,.projects.active,.portifolio.active,.contact.active{
+    opacity: 1;
+    color: aqua;
+    visibility: visible;
+  }
+}
