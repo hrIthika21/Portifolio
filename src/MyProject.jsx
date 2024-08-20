@@ -30,7 +30,7 @@ const MyProject= () => {
                 <div className="project-card-4">
                     <h1 className="project-title">WEATHER WEBSITE</h1>
                     <div className="project-card-4-part-2">
-                        <a href="https://github.com/hrIthika21/Weather_app.git"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwebdamn.com%2Fbuild-weather-website-with-weatherstack-api-using-php%2F&psig=AOvVaw0cdE7wTn9lpdqHtrAuMIBE&ust=1724242640557000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCrssXGg4gDFQAAAAAdAAAAABAE" alt="project-4" className="project-4" /></a>
+                        <a href="https://github.com/hrIthika21/Weather_app.git"><img src="https://webdamn.com/wp-content/uploads/2019/11/build-weather-website-with-php-min.png" alt="project-4" className="project-4" /></a>
                         <p>Displays current weather condition,forecast for next 24 hours and 5 days.Click the image to get source code</p>
                     </div>
                 </div>
