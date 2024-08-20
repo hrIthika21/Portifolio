@@ -77,7 +77,7 @@ const Navbar = () => {
                 </div>
             </nav>
             <div id="intro">
-                <img src="/profile_pic.jpeg" className='my_profile'/>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSggCVFTPlVYuUP22OPK7K0zZsRzw3uPKYkYQ&s" className='my_profile'/>
                 <div className="my_intro">
                     <h1>HI, I AM</h1>
                     <h3>HRITHIKA</h3>
