@@ -77,7 +77,7 @@ const Navbar = () => {
                 </div>
             </nav>
             <div id="intro">
-                <img src="src/assets/profile pic.jpeg" className='my_profile'/>
+                <img src="https://e1.pxfuel.com/desktop-wallpaper/263/422/desktop-wallpaper-instagram-profile-for-girls-instagram-dp-girl-thumbnail.jpg" className='my_profile'/>
                 <div className="my_intro">
                     <h1>HI, I AM</h1>
                     <h3>HRITHIKA</h3>

@@ -1925,6 +1925,11 @@
   .container_about_me{
     margin-top: 0;
   }
+
+  .project-card-1:hover, .project-card-2:hover, .project-card-3:hover, .project-card-4:hover {
+    transform: scale(1.09);
+    border-radius: 30px;
+  }
 }
 
 @media(max-width:454px){
@@ -1948,5 +1953,53 @@
 
   #intro{
     top:20%;
+  }
+}
+
+@media(max-width:392px){
+  .my-portifolio{
+    font-size:20px ;
+  }
+
+  .hamburger-menu{
+    left:-63%;
+    height: 40px;
+    width: 40px;
+    top:-60%;
+  }
+
+  .my_profile {
+
+    width: 150px;
+    height: 150px;
+  }
+
+  .off-screen-menu{
+    max-width: 1450px;
+  }
+
+  .intro,.about,.projects{
+    margin-top: 10%;
+    flex:none;
+  }
+
+  .text-1{
+    top:480px;
+  }
+
+  .text-2{
+    top: 900px;
+  }
+
+  .info_about_me{
+    margin-left: 0%;
+  }
+
+  .down_navbar{
+    margin-left: 0%;
+  }
+
+  .down-nav-link-1, .down-nav-link-2, .down-nav-link-3 {
+    font-size: 8px;
   }
 }
