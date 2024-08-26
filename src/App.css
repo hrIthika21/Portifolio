@@ -1859,7 +1859,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
   }
 
@@ -1930,6 +1930,25 @@
     transform: scale(1.09);
     border-radius: 30px;
   }
+
+  .off-screen-menu{
+    max-width: 1450px;
+  }
+
+  .intro, .about, .projects{
+    margin-top: 10%;
+    flex: none;
+  }
+
+  .text-2 {
+    top: 890px;
+  }
+
+  .text-1 {
+    top: 460px;
+  }
+
+  
 }
 
 @media(max-width:454px){
