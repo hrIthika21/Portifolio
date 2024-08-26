@@ -1963,6 +1963,27 @@
     margin-top: 10%;
     flex: none;
   }
+
+  .text-1 {
+    top: 470px;
+  }
+
+  .text-2 {
+    top: 890px;
+  }
+
+  .text-4 {
+    bottom: 160px;
+  }
+}
+
+@media(max-width:453px) {
+  .hamburger-menu {
+    width: 45px;
+    height: 40px;
+    top: -55%;
+    left:-57%;
+  }
 }
 
 @media(max-width:392px){
