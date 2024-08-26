@@ -30,7 +30,7 @@ const MyProject= () => {
                 <div className="project-card-4">
                     <h1 className="project-title">WEATHER WEBSITE</h1>
                     <div className="project-card-4-part-2">
-                        <a href="https://github.com/hrIthika21/Weather_app.git"><img src="src/assets/weather_website.jpg" alt="project-4" className="project-4" /></a>
+                        <a href="https://github.com/hrIthika21/Weather_app.git"><img src="src/assets/Weather_website.jpg" alt="project-4" className="project-4" /></a>
                         <p>Displays current weather condition,forecast for next 24 hours and 5 days.Click the image to get source code</p>
                     </div>
                 </div>
