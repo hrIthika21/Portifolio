@@ -4,6 +4,7 @@ import MusicWebsite from './assets/music_website.jpg';
 import TicTacToe from './assets/tic_tac_toe.jpg';
 import ExpenseTracker from './assets/expense_tracker.jpg';
 
+
 const MyProject= () => {
     return ( 
         <div id="projects">

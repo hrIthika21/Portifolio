@@ -2003,3 +2003,9 @@
     font-size: 8px;
   }
 }
+
+@media(max-width:332px){
+  .hamburger-menu{
+    left:-66%;
+  }
+}
