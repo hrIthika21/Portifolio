@@ -1954,6 +1954,15 @@
   #intro{
     top:20%;
   }
+
+  .off-screen-menu{
+    max-width: 1450px;
+  }
+
+  .intro, .about, .projects{
+    margin-top: 10%;
+    flex: none;
+  }
 }
 
 @media(max-width:392px){
