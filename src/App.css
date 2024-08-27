@@ -2038,7 +2038,7 @@
 @media(max-width:460px){
   .hamburger-menu{
     top:-45%;
-    margin-right: 50%;
+    margin-right: 40%;
     
   }
 }
@@ -2077,7 +2077,7 @@
   }
 
   .text-1 {
-    top: 470px;
+    top: 400px;
   }
 
   .text-2 {
