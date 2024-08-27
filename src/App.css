@@ -1423,7 +1423,7 @@
 
   .title{
     margin: 10px;
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .all-cards{
@@ -1778,6 +1778,16 @@
     bottom: 125px;
   }
 
+  .my_intro{
+  margin-right: 5%;
+  }
+
+  .my_profile{
+    max-width: 200px;
+    height: 200px;
+    margin-top: 5%;
+  }
+
 }
 
 @media(max-width:568px){
@@ -2018,6 +2028,11 @@
   .about_me_title {
     font-size: 60px;
   }
+
+  .title {
+
+    font-size: 25px;
+  }
 }
 
 @media(max-width:460px){
@@ -2121,7 +2136,9 @@
 }
 
 
-@media(max-width:410px){
+
+
+@media(max-width:412px){
   .my-portifolio {
     font-size: 16px;
   }
@@ -2142,7 +2159,7 @@
   }
 }
 
-@media(max-width:392px){
+@media(max-width:400px){
 
   .links {
     width: 20%;
@@ -2256,9 +2273,7 @@
 }
 
 @media(max-width:332px){
-  .hamburger-menu{
-    left:-66%;
-  }
+
 
   .info_about_me {
     margin-left: 0%;
