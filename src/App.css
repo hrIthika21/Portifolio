@@ -2089,7 +2089,11 @@
   }
 
   #intro {
-    margin-top: 10%;
+    margin-top: 5%;
+  }
+
+  .my_intro{
+    margin-top: 2%;
   }
 
 }
