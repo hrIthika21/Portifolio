@@ -17,7 +17,7 @@
   scroll-behavior: smooth;
 }
 
-@media (max-width:1522px) {
+@media (max-width:1550px) {
     .complete{
       width:100%;
       height: 700px;
