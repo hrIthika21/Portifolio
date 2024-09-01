@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect } from 'react';
-import Profile from './assets/profile.jpg';
+import Profile from './assets/profile_pic.jpeg';
 
 const Navbar = () => {
 
@@ -61,7 +61,8 @@ const Navbar = () => {
                             <div className="nav-links">
                                 <a href="#intro" className="nav-link-1" >Intro</a>
                                 <a href="#about" className="nav-link-2">About</a>
-                                <a href="#projects" className="nav-link-3" >Projects</a>
+                                <a href="#skills" className='nav-link-3'>Skills</a>
+                                <a href="#projects" className="nav-link-4" >Projects</a>
                             </div>
                             <div className="hamburger-menu" >
                                 <span></span>
